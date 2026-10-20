@@ -46,7 +46,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.sabdevz-app"
                 artifactId = "SabdevzLivemap"     
-                version = "1.0.9"                   
+                version = "v1.0.24"                   
             }
         }
     }
