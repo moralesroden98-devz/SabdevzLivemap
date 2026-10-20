@@ -46,7 +46,7 @@ afterEvaluate {
                 from(components["release"])
                 groupId = "com.github.moralesroden98-devz"
                 artifactId = "SabdevzLivemap"     
-                version = "v1.0.25"                   
+                version = "v1.0.26"                   
             }
         }
     }
