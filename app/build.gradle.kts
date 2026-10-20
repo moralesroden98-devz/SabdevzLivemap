@@ -44,9 +44,9 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 from(components["release"])
-                groupId = "com.github.tkmotoblog"
-                artifactId = "Livemap"
-                version = "1.0.2"
+                groupId = "com.github.sabdevz-app"
+                artifactId = "SabdevzLivemap"     
+                version = "1.0.9"                   
             }
         }
     }
