@@ -306,7 +306,7 @@ class LiveMapView @JvmOverloads constructor(
 
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        canvas.drawColor(context.getColor(R.color.colorPrimary))
+        canvas.drawColor(context.getColor(R.transparent))
         val mapRect = RectF(width * 0.05f, height * 0.15f, width * 0.95f, height * 0.85f)
 
         if (width == 0 || height == 0) return
