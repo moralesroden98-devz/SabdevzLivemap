@@ -304,9 +304,9 @@ class LiveMapView @JvmOverloads constructor(
         return super.onTouchEvent(event)
     }
 
-    override fun onDraw(canvas: Canvas) {
+override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        canvas.drawColor(context.getColor(R.transparent))
+        canvas.drawColor(android.graphics.Color.TRANSPARENT) // <-- Naayos dito
         val mapRect = RectF(width * 0.05f, height * 0.15f, width * 0.95f, height * 0.85f)
 
         if (width == 0 || height == 0) return
@@ -314,6 +314,7 @@ class LiveMapView @JvmOverloads constructor(
         worldMap?.let {
             canvas.drawBitmap(it, null, mapRect, Paint(Paint.ANTI_ALIAS_FLAG).apply { alpha = 180 })
         }
+    }
 
         pulse += 0.35f
         if (pulse > 1000f) pulse = 0f
